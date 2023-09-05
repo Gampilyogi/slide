@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Hacktoberfest-2021</title>
+    <title>Slider Gampilmedia</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -22,16 +22,16 @@
 </head>
 
 <body>
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-            </ol>
-            <div class="carousel-inner">
-            </div>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="20000">
+    <ol class="carousel-indicators">
+    </ol>
+    <div class="carousel-inner">
 
-            </a>
-          </div>
-        </div>
-    
+
+
+
+    </div>
+  </div>
 <script type="text/javascript">
 // For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
 var firebaseConfig = {
@@ -66,7 +66,7 @@ function updateRec() {
     try {
       document.querySelector('#myCarousel .carousel-inner').innerHTML += `
    <div class="carousel-item ${fActive}">
-    <img class="d-block w-100" src="${user.Web_Banners[elm].Banner_Path}" alt="${user.Web_Banners[elm].Banner_Name}" style="height: auto; width: 100%;">
+    <img class="d-block w-100" src="${user.Web_Banners[elm].Banner_Path}" alt="${user.Web_Banners[elm]}" style="height: auto; width: 100%;">
       <div class="carousel-caption d-none d-md-block">
           <h1>${user.Web_Banners[elm].Banner_Name}</h1>
           <p></p>
